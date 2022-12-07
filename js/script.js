@@ -26,15 +26,15 @@ const fizzbuzzElement = document.getElementById('fizzbuzz')
 
 for (let i = 1; i <= 100; i++) {
     console.log(i);
-    let name = "FrizzBuzz";
-    if (i % 3 && i % 5) {
+    let name = "FizzBuzz";
+    if ((i % 3 === 0) && (i % 5 === 0)) {
         name = name;
         console.log(name)
     } else if (i % 3 === 0) {
-        name = "Frizz";
+        name = "Fizz";
         console.log(name);
     } else if (i % 5 === 0) {
-        name = "Buzz"
+        name = "Buzz";
         console.log(name);
     }
 }
