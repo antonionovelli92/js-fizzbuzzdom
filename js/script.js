@@ -13,3 +13,9 @@ Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 Non complichiamoci la vita con soluzioni complesse: la strada semplice è quasi sempre la migliore 
 */
+
+// 1. utilizzo un ciclo che va da 1 a 100;
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 == 0)} write("Frizz")
+console.log(i)
