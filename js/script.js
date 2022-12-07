@@ -27,18 +27,18 @@ const fizzbuzzElement = document.getElementById('fizzbuzz')
 for (let i = 1; i <= 100; i++) {
     console.log(i);
     let name = "FrizzBuzz";
-    if (i % 3 === 0) {
+    if (i % 3 && i % 5) {
+        name = name;
+        console.log(name)
+    } else if (i % 3 === 0) {
         name = "Frizz";
         console.log(name);
     } else if (i % 5 === 0) {
-        name = "Buzz";
-        console.log(name);
-    } else if (i % 3 && i % 5) {
-        name = "FrizzBuzz"
+        name = "Buzz"
         console.log(name);
     }
-
 }
+
 
 // if (i % 3 == 0) {
 //     fizzbuzzElement.write("Frizz");
@@ -47,3 +47,17 @@ for (let i = 1; i <= 100; i++) {
 // } else if ((i % 3 != 0) && (i % 5 != 0)) {
 //     i = "FrizzBuzz";
 // }
+
+
+
+
+    // if (i % 3 === 0) {
+    //     name = "Frizz";
+    //     console.log(name);
+    // } else if (i % 5 === 0) {
+    //     name = "Buzz";
+    //     console.log(name);
+    // } else if (i % 3 && i % 5) {
+    //     name = "FrizzBuzz"
+    //     console.log(name);
+    // }
