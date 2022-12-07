@@ -14,8 +14,36 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 Non complichiamoci la vita con soluzioni complesse: la strada semplice è quasi sempre la migliore 
 */
 
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 3 == 0)
+// }
+// console.log(i)
+
+const fizzbuzzElement = document.getElementById('fizzbuzz')
+
 // 1. utilizzo un ciclo che va da 1 a 100;
 
 for (let i = 1; i <= 100; i++) {
-    if (i % 3 == 0)} write("Frizz")
-console.log(i)
+    console.log(i);
+    let name = "FrizzBuzz";
+    if (i % 3 == 0) {
+        name = "Frizz";
+        console.log(name);
+    } else if (i % 5 == 0) {
+        name = "Buzz";
+        console.log(name);
+    } else (i % 3 && i % 5) {
+        name = "FrizzBuzz"
+        console.log(name);
+    }
+
+}
+
+// if (i % 3 == 0) {
+//     fizzbuzzElement.write("Frizz");
+// } else if (i % 5 == 0) {
+//     i = "Buzz";
+// } else if ((i % 3 != 0) && (i % 5 != 0)) {
+//     i = "FrizzBuzz";
+// }
