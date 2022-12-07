@@ -25,10 +25,8 @@ const fizzbuzzElement = document.getElementById('fizzbuzz')
 // 1. utilizzo un ciclo che va da 1 a 100;
 
 for (let i = 1; i <= 100; i++) {
-    console.log(i);
     let name = "FizzBuzz";
     if ((i % 3 === 0) && (i % 5 === 0)) {
-        name = name;
         console.log(name)
     } else if (i % 3 === 0) {
         name = "Fizz";
@@ -37,6 +35,7 @@ for (let i = 1; i <= 100; i++) {
         name = "Buzz";
         console.log(name);
     }
+    console.log(i);
 }
 
 
