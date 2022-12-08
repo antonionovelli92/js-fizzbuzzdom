@@ -20,33 +20,87 @@ Non complichiamoci la vita con soluzioni complesse: la strada semplice è quasi 
 // }
 // console.log(i)
 
-const fizzbuzzElement = document.getElementById('fizzbuzz')
+const fbElement = document.getElementById('fizzbuzz');
+// const list = document.createElement('ul');
 
 // 1. utilizzo un ciclo che va da 1 a 100;
+let result = '';
+let resultHtml = '';
 
-for (let i = 1; i <= 100; i++) {
-    let name = "FizzBuzz";
-    if ((i % 3 === 0) && (i % 5 === 0)) {
-        console.log(name);
-    } else if (i % 3 === 0) {
-        name = "Fizz";
-        console.log(name);
+for (i = 1; i < 101; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        result = "FizzBuzz";
+        console.log(result);
     } else if (i % 5 === 0) {
-        name = "Buzz";
-        console.log(name);
+        result = "buzz";
+        console.log(result);
+
+    } else if (i % 3 === 0) {
+        result = "Fizz";
+        console.log(result);
+
     } else {
-        console.log(i);
+        result = i;
+        console.log(result);
+
     }
+    resultHtml += "<p>" + result + "</p>";
 }
+fbElement.innerHTML += (resultHtml);
 
 
-// if (i % 3 == 0) {
-//     fizzbuzzElement.write("Frizz");
-// } else if (i % 5 == 0) {
-//     i = "Buzz";
-// } else if ((i % 3 != 0) && (i % 5 != 0)) {
-//     i = "FrizzBuzz";
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // for (let i = 1; i <= 100; i++) {
+    //     const fizz = 'Fizz';
+    //     const buzz = 'Buzz';
+    //     const fizzBuzz = 'FizzBuzz';
+    //     const name = fizz + buzz + fizzBuzz;
+    //     const number = i;
+    //     const listElement = document.createElement('li')
+
+    //     if ((i % 3 === 0) && (i % 5 === 0)) {
+    //         fizzBuzz;
+    //         console.log(fizzBuzz);
+    //     } else if (i % 3 === 0) {
+    //         fizz;
+    //         console.log(fizz);
+    //     } else if (i % 5 === 0) {
+    //         buzz;
+    //         console.log(buzz);
+    //     } else {
+    //         number;
+    //         console.log(number);
+    //     }
+    //     listElement.append(i);
+    //     list.appendChild(listElement);
+    // }
+    // fbElement.appendChild(list);
+
+
+    // if (i % 3 == 0) {
+    //     fizzbuzzElement.write("Frizz");
+    // } else if (i % 5 == 0) {
+    //     i = "Buzz";
+    // } else if ((i % 3 != 0) && (i % 5 != 0)) {
+    //     i = "FrizzBuzz";
+    // }
 
 
 
@@ -60,4 +114,3 @@ for (let i = 1; i <= 100; i++) {
     // } else if (i % 3 && i % 5) {
     //     name = "FrizzBuzz"
     //     console.log(name);
-    // }
